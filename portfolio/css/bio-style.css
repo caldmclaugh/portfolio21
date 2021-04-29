@@ -1,0 +1,308 @@
+/**************************** About me ****************************/
+/* structure */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(#E2EFFA 25%, #FFF7D5  25%), linear-gradient(#E2EFFA 25%, #FFF7D5  25%);
+  line-height: 1.75;
+}
+/* typography */
+h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight:bold;
+  text-align: center;
+}
+h2 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 66ex;
+}
+h3 {
+  color: #fff;
+  font-family: "Cabin", "Open Sans",sans-serif;
+  text-align: center;
+}
+p {
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  max-width:60ex;
+  padding-bottom: 2rem;
+}
+/* nav */
+.navbar {
+  display: none;
+}
+ .hamburger-nav {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.cm-logo {
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
+  width:auto;
+  z-index: 5;
+}
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
+.btn-toggle-nav {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  z-index: 5;
+}
+
+.nav-menu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 7rem;
+  transition: all .7s ease-in-out;
+  width: 0rem;
+  z-index: 6;
+}
+.nav-menu ul {
+  padding: 0 .5rem 5rem;
+  visibility: hidden;
+}
+.nav-menu ul li {
+  list-style: none;
+  padding-top: 5rem;
+}
+.nav-menu ul li a  {
+  color: #056BBD;
+  display: block;
+  font-family: "Montserrat", "Open Sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 6rem;
+  opacity: 0;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+/* hero */
+.hero {
+  background-color: #fff;
+  border-bottom-right-radius: 7.5rem;
+  padding: 7.5rem 2rem 3rem;
+  position: relative;
+  width: 100vw;
+}
+.hero-content {
+  margin: auto;
+  max-width: max-content;
+}
+.photo img {
+  border-radius: 5%;
+  margin: 2.5rem auto;
+  max-width:100%;
+}
+/* block */
+.block {
+  background-color: #E3EFFA;
+  margin-top: -6rem;
+  padding: 11rem 2rem;
+}
+/* conclusion */
+.conclusion {
+  background-color: #fff;
+  border-radius: 7.5rem 0;
+  bottom: 6rem;
+  padding: 5rem 2rem 3rem;
+  position: relative;
+}
+.cta {
+  background-color: #056BBD;
+  border-radius: 5rem;
+  color: #fff;
+  display:block;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  width: max-content;
+  z-index: 2;
+}
+a.cta:hover {
+  background-color: #11A64A;
+}
+/***connect***/
+#contact {
+  color: #fff;
+}
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 10rem;
+  padding: 10% 20% 1rem;
+  text-align: center;
+}
+.connect h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  max-width: 33ex;
+  text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+    color: #11A64A;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  max-width: 40%;
+}
+.social img {
+  padding: 1rem;
+  width: 6rem;
+}
+/*******************MEDIA QUERIES*********************/
+/* TABLET */
+@media screen and (min-width: 45rem) {
+/* typography */
+  h1 {
+    text-align: left;
+  }
+  h2 {
+    margin: auto;
+  }
+  p {
+    margin: auto;
+  }
+/* nav */
+  .cm-logo {
+    align-items:center;
+    display: flex;
+    padding-left: 1rem;
+    width:auto;
+    z-index: 5;
+  }
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+      text-decoration: none;
+    }
+  nav a img {
+      width: auto;
+    }
+    .links a:hover {
+      color: #11A64A;
+      text-decoration: underline;
+    }
+    a.about {
+      color: #11A64A;
+      position: relative;
+    }
+    a.about:hover {
+      text-decoration: none;
+    }
+    .green-line {
+      background-color: #11A64A;
+      height: 0.5rem;
+      position: absolute;
+      margin-left: 4.9rem;
+      width: 4.5rem;
+      z-index: 500;
+    }
+/* hero */
+  .hero {
+    padding-top: 10rem;
+  }
+  .p-one {
+    padding-top: 2rem;
+  }
+  .photo {
+    float:left;
+    margin: auto;
+    max-width: 30rem;
+    padding-right: 2.5rem;
+  }
+  /* block */
+  .block {
+    margin-top: -5rem;
+    padding: 10rem 5rem;
+}
+  .connect h3 {
+    font-size: 2rem;
+  }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 70rem) {
+  /* typography */
+  h1 {
+    font-family: "Ubuntu", "Open Sans", sans-serif;
+    font-size: 3.6rem;
+    font-weight: bold;
+    text-align: left;
+    width:max-content;
+  }
+/* hero */
+  .hero h1 {
+    text-align: left;
+  }
+  .block {
+    grid-area: block;
+    margin-top: -5rem;
+  }
+  .conclusion {
+    grid-area: conclusion;
+  }
+  .connect h2 {
+    font-size: 2rem;
+  }
+}
