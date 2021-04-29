@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Health Case Study</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,600,800|Ubuntu:700|Nunito|Quicksand&display=swap">
+    <link rel="stylesheet" href="css/chordhealth-style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+<!--nav-->
+    <nav>
+      <div class="navbar">
+        <a class="cm-logo" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+        <div class="links">
+          <a class="about" href="bio.html">About</a>
+          <a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a>
+          <a class="contact" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="hamburger-nav">
+        <a class="cm-logo hamburger" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+        <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg" alt="hamburger menu"></i>
+      </div>
+      <aside class="nav-menu">
+        <ul>
+          <li><a class="home" href="index.html">Home</a></li>
+          <li><a class="about" href="bio.html">About</a></li>
+          <li><a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a></li>
+          <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+      </aside>
+    </nav>
+<!--container-->
+    <main class="container">
+      <a id="top"></a>
+      <a class="top-link hide" href="" id="js-top"><img src="images/to-top.svg" alt="back to top icon"></a>
+<!--hero-->
+      <section class="hero">
+        <figure class="chordhealth-logo">
+          <img src="images/chordhealth-logo.svg" alt="Chord Health logo">
+        </figure>
+        <h1 class="text-hero">Chord Health helps patients with musculoskeletal conditions understand and manage risk factors for chronic pain through a mobile app.</h1>
+        <figure class="chordhealth-mockup">
+          <img src="images/chordhealth-mockup.png" alt="Chord Health mockup">
+        </figure>
+        <a class="cta" href="https://bit.ly/chordhealth" target="_blank">See prototype</a>
+      </section>
+<!--problem/solution-->
+      <section class="prob-sol">
+        <div class="problem">
+          <h2 class="title-prob">Problem</h2>
+            <p class="text-prob">
+            Musculoskeletal conditions such as low back pain and osteoarthritis can severely disrupt a person’s life. Chronic pain impacts one’s ability to maintain an active lifestyle, which in turn perpetuates and exacerbates pain.
+            </p>
+          <figure class="icon-prob">
+            <img src="images/problem.svg" alt="Problem icon">
+          </figure>
+        </div>
+        <div class="solution">
+          <h2 class="title-sol">Solution</h2>
+            <p class="text-sol">
+            The Chord Health app collects step count data from a user’s smartphone and uses it to calculate an individual’s risk for chronic pain. Through awareness of risk, patients are able to increase their activity over time, which improves mobility and decreases risk for continued chronic pain.
+            </p>
+          <figure class="icon-sol">
+            <img src="images/solution.svg" alt="Solution icon">
+          </figure>
+        </div>
+      </section>
+<!--DISCOVERY-->
+      <section class="discovery">
+        <div class="text-disc">
+          <h3>Discovery</h3>
+        </div>
+<!--Summary-->
+        <div class="summary">
+          <p>
+          The process of designing this app involved a ton of brainstorming and work sessions up front to understand all of the intersecting touch points throughout each type of user’s experience. Myself and the CEO spent a great deal of time working together to create narratives that told the story of how providers would interact with patients and the various workflows that would need to be present in the app to support these narratives.
+        </p>
+        </div>
+      </section>
+<!--STRATEGY-->
+      <section class="strategy">
+        <h3 class="text-strat">Strategy</h3>
+<!--user personas-->
+        <div class="personas">
+          <div class="text-personas">
+            <h2>User narratives</h2>
+              <p>
+                I used the results of our brainstorming work sessions to tell the stories of how various users would engage with the app, i.e. a narrative about a provider and his interactions with the provider web app, and another narrative for a Medicare patient and her interactions with the patient mobile app. These stories made it easy to spot holes in our thinking and restructure and solidify what was shaping up to be user story content.
+              </p>
+          </div>
+          <div class="narratives">
+            <div class="nar-text">
+              <h2>Dr. T - RPM + Digital Therapy</h2>
+              <p>
+                Dr. T is an interventional pain doctor in San Antonio. He helps many patients suffering from chronic pain. He recently learned about Chord Health’s Remote Patient Monitoring + Digital Therapy platform and heard that other providers have had positive experiences with it. He heard that Medicare is reimbursing for RPM and since ⅓ of his patients are on Medicare he thinks it would be of great benefit to both these patients and his practice.
+              </p>
+              <p>
+                To register, he has to enter his company name, tax ID number, first and last name, and work email. He receives an email verification and then has to create a password, agree to the Master Service Agreement, and then fill out the clinic name and address.
+              </p>
+              <p>
+                Next, there is a Billing Method screen, where Dr. T can choose how to get paid. His options are to select the “Medicare & Commercial Insurance” box, the “Self-Pay” box, or both. He selects both boxes and then has to fill out information in each box. In the “Medicare & Commercial Insurance” box, he has to enter his Medicare Provider Transaction Access Number (PTAN), individual National Provider Identifier Standard (NPI) and group NPI. In the “Self-Pay” box, he has to enter his bank account information.
+              </p>
+              <p>
+                Lastly, he is prompted to invite his team by entering their email addresses and roles.He adds his office manager Monica’s email so that she will also receive the alerts. Dr. T reaches the final screen in the registration process, which confirms that it is complete and has a video tutorial on how to create his first prescription.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+<!--INFORMATION ARCHITECTURE-->
+      <section class="info-arch">
+        <div class="text-info">
+          <h3>Information architecture</h3>
+        </div>
+<!--user stories-->
+        <div class="user-stories">
+          <div class="stories">
+            <h2>User stories</h2>
+              <p>
+                Calling back to the user narratives, I wrote up user stories and prioritized them to identify the minimum viable product. The high priority stories for providers included setting up an account for their organization, prescribing therapies to patients and running a billable report. High priority stories for patients included onboarding, viewing risk scores and other content, and contacting support.
+              </p>
+          </div>
+          <div class="list-stories">
+            <h2 class="high-pri">High priority stories</h2>
+            <div class="provider">
+              <h4>As a medical provider/staff, I want to...</h4>
+              <ul>
+                <li>register my organization with Chord Health</li>
+                <li>prescribe a therapy</li>
+                <li>view patient performance</li>
+                <li>record clinical service time in the app</li>
+                <li>run a report for medical billing</li>
+                <li>change my corporation settings</li>
+              </ul>
+            </div>
+            <div class="patient">
+              <h4>As a patient, I want to...</h4>
+              <ul>
+                <li>receive a prescription for treatment</li>
+                <li>set up my account </li>
+                <li>view my step count/goal</li>
+                <li>view my Risk Scores</li>
+                <li>view digital therapy content</li>
+                <li>edit my profile</li>
+                <li>contact my doctor/CH support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+<!--user flows-->
+        <div class="user-flows">
+          <div class="text-flows">
+            <h2>User flows</h2>
+              <p>
+                With user stories in mind, I created user flows for both the provider web app and the patient mobile and web app. The provider app flows included clinic registration, provider staff onboarding, bulk patient upload, and a large flow with day to day functions of the app. The patient facing flows included onboarding and a flow for each tab in the patient app. These provided even more insight than the narratives and user stories alone, making clear when there were gaps in our thinking and giving me a clearer picture of the design as I moved into wireframes. While some of the details changed as we learned more over time, these flows solidified the direction we were headed.
+              </p>
+              <p>
+                In the examples below, the highlighted steps mark changes to the existing product.
+              </p>
+          </div>
+          <div class="img-flows">
+            <figcaption>Clinic registration</figcaption>
+            <img src="images/swipe.svg" class="swipe" alt="swipe">
+            <div class="scrolling-wrapper-flexbox">
+              <div class="card">
+                <figure class="registration">
+                  <img src="images/clinic-registration.svg" alt="clinic registration user flow">
+                </figure>
+              </div>
+            </div>
+            <figcaption>Patient onboarding</figcaption>
+            <img src="images/swipe.svg" class="swipe" alt="swipe">
+            <div class="scrolling-wrapper-flexbox">
+              <div class="card">
+                <figure class="onboarding">
+                  <img src="images/patient-onboarding.svg" alt="patient onboarding user flow">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <a class="cta" href="chordhealth-userflows.pdf" target="_blank">See all user flows</a>
+        </div>
+<!--wireframes-->
+        <div class="wireframes">
+          <div class="text-wireframes">
+            <h2>Wireframes</h2>
+              <p>
+                Using Figma I began translating the user flows into wireframes. For the provider web designs, I added new features such as the notifications side bar on the dashboard while keeping the basic UI elements that existed in the current provider-facing app.
+              </p>
+          </div>
+          <div class="web-wire">
+            <figure class="web-wireframes">
+              <img class="existing-dash" src="images/existing-app.png" alt="existing dashboard screenshot">
+              <figcaption>Existing dashboard</figcaption>
+            </figure>
+            <figure class="web-wireframes">
+              <img src="images/web-wireframe.png" alt="provider dashboard wireframe">
+              <figcaption>Provider web dashboard</figcaption>
+            </figure>
+          </div>
+          <div class="text-wireframes">
+            <p>
+              The patient profile I designed required an entirely new concept from the previous "Patient Detail Page", with features such as the timer, notifications, an additional graph, and the patient log.
+            </p>
+          </div>
+          <div class="web-wire">
+            <figure class="web-wireframes">
+              <img class="existing-patient" src="images/patient-existing.png" alt="existing patient profile screenshot">
+              <figcaption>Existing patient detail page</figcaption>
+            </figure>
+            <figure class="web-wireframes">
+              <img src="images/patient-profile.png" alt="patient profile wireframe">
+              <figcaption>Provider web patient profile</figcaption>
+            </figure>
+          </div>
+          <div class="text-wireframes">
+            <p>
+              Since the mobile app was completely new, I went through a few iterations before settling on a design to mock up. My biggest challenge regarding the mobile wireframes was how to display the digital physical therapy and step tracking. We wanted patients to see both features as unique to each other but equally important, and I spent a lot of time playing around with how to marry these two concepts while showing them as two parts.
+            </p>
+          </div>
+          <div class="mobile-wire">
+            <figure class="mobile-wireframes">
+              <img src="images/mobile-it1.png" alt="mobile 1st iteration wireframe">
+              <figcaption>Mobile dashboard 1</figcaption>
+            </figure>
+            <figure class="mobile-wireframes">
+              <img src="images/mobile-it2.png" alt="mobile 2nd iteration wireframe">
+              <figcaption>Mobile dashboard 2</figcaption>
+            </figure>
+            <figure class="mobile-wireframes-third">
+              <img src="images/mobile-wireframe.png" alt="mobile dashboard wireframe">
+              <figcaption>Mobile dashboard 3</figcaption>
+            </figure>
+          </div>
+        </div>
+        <a class="cta" href="https://www.figma.com/file/fRy40BgcXCFXSXuAr1ki9z/Chord-Health-Wireframes?node-id=242%3A963" target="_blank">See all wireframes</a>
+      </section>
+<!--VISUAL DESIGN-->
+      <section class="visual-design">
+        <div class="text-visual">
+          <h3>Visual design</h3>
+        </div>
+<!--mockups-->
+        <div class="mockups">
+          <div class="text-mockups">
+            <h2>Mockups</h2>
+              <p>
+                The transition from wireframes to high fidelity mockups was smooth for the provider web app, as I was building onto an existing product that had consistent styling throughout.
+              </p>
+          </div>
+          <div class="img-mock">
+            <figure class="web-mockups">
+              <img src="images/mock-webdashboard.png" alt="web dashboard mockup">
+              <figcaption>Provider web dashboard</figcaption>
+            </figure>
+            <figure class="web-mockups">
+              <img src="images/mock-webpatient.png" alt="web patient profile mockup">
+              <figcaption>Provider web patient profile</figcaption>
+            </figure>
+          </div>
+          <div class="text-mockups">
+            <p>
+              I did, however, get to flex my visual design skills when it came to high fidelity mockups for the patient mobile app. Chord Health had recently updated its branding but the typeface and color scheme had so far been used primarily in presentations. I got to take the new style guide as a starting point and create from there.
+            </p>
+          </div>
+          <div class="mobile-mock">
+            <figure class="mobile-mockups">
+              <img src="images/mock-mobile1.png" alt="mobile therapy dashboard mockup">
+              <figcaption>Mobile therapy dashboard</figcaption>
+            </figure>
+            <figure class="mobile-mockups">
+              <img src="images/mock-mobile2.png" alt="mobile scores dashboard mockup">
+              <figcaption>Mobile scores dashboard</figcaption>
+            </figure>
+          </div>
+        </div>
+<!--prototypes-->
+        <div class="prototypes">
+          <div class="text-prototypes">
+            <h2>Prototypes</h2>
+            <p>
+               I created a clickable prototype from my mockup frames which allowed me to get a better picture of the user experience. I added some mobile screens to mimic the full experience, i.e. showing the prescription text message come up on the phone’s lock screen and how the user would go about downloading the app. This allowed the user to complete the full onboarding process and gave a more accurate depiction of a patient’s first interactions with the product.
+            </p>
+            <p>
+              We did some informal usability testing, asking family and friends to try moving through onboarding and seeing what they found. I made a few tweaks to the design based on the feedback, but overall we were happy to see that the onboarding process was solid. From here, I was able to deliver the refined mockups to our development team.
+            </p>
+            <figure class="prototype">
+              <p align="center"><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="250" height="540" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRecayJNZRA6LabrFbaA6C7%2FChord-Health-Prototype%3Fpage-id%3D0%253A1%26node-id%3D21%253A0%26viewport%3D459%252C353%252C0.03086463361978531%26scaling%3Dscale-down" allowfullscreen></iframe></p>
+              <figcaption>Clickable prototype</figcaption>
+            </figure>
+        </div>
+        <div class="update">
+          <div class="text-update">
+            <h2>App update</h2>
+            <p>
+              After the initial app release, the needed improvements were painfully obvious. I realized quickly that scope creep had obscured my understanding of the app's true value, and I was eager to make design changes to remedy the flaws.
+            </p>
+            <p>
+              The main issue was that I had placed the Risk Score Trend chart within the secondary "My Activity" tab, which the user had to navigate to and then tap another button to get to. Originally, I had been thinking of the app as combination of digital physical therapy and risk scores. While this was true, the design was positioned to highlight the physical therapy videos, whereas the risk scores were almost hidden.
+            </p>
+            <p>
+              Explaining the risk score component to patients and trying to portray their value was difficult for a couple of reasons. For one, as I mentioned, the layout essentially hid this feature. Another issue worth noting was that the data points were designed to be tappable, so that the user could see their step count and score for any day they selected. However, the dots were so small that it was extremely difficult for users to accurately tap the data points. This was especially frustrating as our first round of patients were seniors, many of whom had some level of visual impairment. In our first big app update, I did a redesign of the dashboard to put more emphasis on the risk scores and added a slider to make it easier for users to view individual data points on the graph. This update proved to be a huge improvement in terms of usability for our patients.
+            </p>
+          </div>
+          <div class="update-mock">
+            <figure class="mobile-mockups">
+              <img src="images/mock-update1.png" alt="mobile activity dashboard update mockup">
+              <figcaption>Mobile activity dashboard update</figcaption>
+            </figure>
+            <figure class="mobile-mockups">
+              <img src="images/mock-update2.png" alt="mobile therapy dashboard update mockup">
+              <figcaption>Mobile therapy dashboard update</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+<!--CONCLUSION-->
+      <section class="conclusion">
+        <div class="title-conclusion">
+          <h2>Conclusion</h2>
+        </div>
+        <div class="text-conclusion">
+          <p>
+            The Chord Health app helps patients take control of their chronic pain through disease risk awareness. With easy access to granular data on how their lifestyle choices impact their likelihood for continued pain, patients are able to adjust their daily activity to decrease their pain over time. The design process helped me get to our current app version, but we are by no means done here. With every patient interaction we glean a little more insight on how to improve in the future, and we celebrate every time we get to let go of lesser ideas to make room for better ones.
+          </p>
+        </div>
+        <div class="conc-list">
+          <figure class="roles-icon">
+            <img src="images/roles.svg" alt="roles icon">
+          </figure>
+          <div class="roles">
+            <h2>Roles</h2>
+            <ul>
+              <li><p>Information architecture</p></li>
+              <li><p>Visual design</p></li>
+              <li><p>Usability testing</p></li>
+              <li><p>Mockup iteration</p></li>
+            </ul>
+          </div>
+          <figure class="deliv-icon">
+            <img src="images/deliverables.svg" alt="deliverables icon">
+          </figure>
+          <div class="deliverables">
+            <h2>Deliverables</h2>
+            <ul>
+              <li><p>User stories</p></li>
+              <li><p>User flows</p></li>
+              <li><p>Wireframes</p></li>
+              <li><p>High fidelity mockups</p></li>
+              <li><p>Clickable prototype</p></li>
+            </ul>
+          </div>
+          <figure class="tools-icon">
+            <img src="images/tools.svg" alt="tools icon">
+          </figure>
+          <div class="tools">
+            <h2>Tools</h2>
+            <ul>
+              <li><p>Figma</p></li>
+              <li><p>draw.io</p></li>
+              <li><p>Lucidchart</p></li>
+              <li><p>Google Sheets</p></li>
+              <li><p>Zeplin</p></li>
+              <li><p>Confluence</p></li>
+              <li><p>Jira</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+<!--MORE PROJECTS-->
+      <section class="more">
+        <h1>See more projects</h1>
+        <div class="see-more">
+          <div class="furward">
+            <figure>
+              <img src="images/furward-logo.svg" alt="Furward logo">
+            </figure>
+            <p>Furward takes the stress off of pet patients and their pets with a platform where neighbors can exchange pet care for free.</p>
+            <a class="cta" href="furward-project.html">See case study</a>
+          </div>
+          <div class="camelot">
+            <figure>
+              <img src="images/camelot-logo.svg" alt="Camelot logo">
+            </figure>
+            <p>Camelot offers a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</p>
+            <a class="cta" href="camelot-project.html">See case study</a>
+          </div>
+          <div class="busybus">
+            <h2>BusyBus</h2>
+            <p>BusyBus is a mobile public transit app that informs riders of ETA's for multiple busses using the same stop.</p>
+            <a class="cta" href="bbproject.html">See case study</a>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="connect">
+        <h2><a id="contact">Like what you see?</a></h2>
+        <h2>Feel free to send me an <a href="contact.html">email</a> or connect with me on <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank">LinkedIn</a>.</h2> <h2>I'd love to hear from you!</h2>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon"></a>
+          <a href="contact.html"><img src="images/email.svg" alt="email icon"></a>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ["It is expensive                                                   ", "Uncomfortable leaving pet(s) away from home", "I don't trust people I don't know with pet care ", "Distance is an issue                                          ", "Other                                                                 "],
+            datasets: [{
+                label: '% of Votes',
+                data: [.476, .286, .095, .0953, .0477],
+                backgroundColor: [
+                    'rgba(5, 107, 189, 100)',
+                    'rgba(20, 166, 67, 100)',
+                    'rgba(243, 204, 45, 100)',
+                    'rgba(46, 159, 249, 100)',
+                    'rgba(71, 217, 118, 100)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script src="script.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156891890-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156891890-1');
+    </script>
+  </body>
+</html>

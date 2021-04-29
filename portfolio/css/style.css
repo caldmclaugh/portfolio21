@@ -1,0 +1,474 @@
+/*portfolio*/
+/*#E3EFFA #FFF7D5*/
+
+/*** structure ***/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(#E2EFFA 50%, #FFF7D5 50%);
+  line-height: 1.75;
+}
+.container {
+  width: 100%;
+}
+.links a:hover {
+  color: #11a64a;
+  text-decoration: underline;
+}
+section a {
+  color: #000;
+  text-decoration: none;
+}
+.description {
+  background-color: #fff;
+  border-radius: 5rem;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  max-width: 66ex;
+  padding: 5rem 2rem;
+}
+.description h2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.cta {
+  background-color: #056BBD;
+  border-radius: 5rem;
+  color: #fff;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+  z-index: 2;
+}
+a.cta:hover {
+  background-color: #11a64a;
+}
+/***typography***/
+h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight:bold;
+  text-align: center;
+}
+h2 {
+  font-family: "Cabin", "Open Sans",sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+h3 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+p {
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+ul > li {
+  text-align: center;
+}
+/***NAV***/
+.navbar {
+  display: none;
+}
+ .hamburger-nav {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.cm-logo {
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
+  width:auto;
+  z-index: 5;
+}
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
+.btn-toggle-nav {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  z-index: 5;
+}
+.nav-menu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 7rem;
+  transition: all .7s ease-in-out;
+  width: 0rem;
+  z-index: 6;
+}
+.nav-menu ul {
+  padding: 0 .5rem 5rem;
+  visibility: hidden;
+}
+.nav-menu ul li {
+  list-style: none;
+  padding-top: 5rem;
+}
+.nav-menu ul li a  {
+  color: #056BBD;
+  display: block;
+  font-family: "Montserrat", "Open Sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 6rem;
+  opacity: 0;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+/***HERO***/
+.hero {
+  background-color: #fff;
+  border-bottom-right-radius: 10rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+.hero-img {
+  background-image: url("/images/coronado.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-bottom-right-radius: 10rem;
+  height:50vh;
+  margin-top: -15rem;
+  width: 100vw;
+  z-index: 1;
+}
+.hero .description, .hero-img {
+  animation-duration: 5s;
+}
+.hero .description {
+  background-color: transparent;
+  margin: 0 auto;
+  z-index: 2;
+}
+/***CHORD HEALTH***/
+.chordhealth {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5rem auto;
+}
+.chordhealth .description {
+  margin: 0 auto;
+}
+.chordhealth-img {
+  max-width: 24rem;
+  padding-bottom: 5rem;
+}
+.chordhealth-logo {
+  padding-bottom: 2.5rem;
+}
+.chordhealth h2 {
+  padding-top: 0rem;
+}
+.chordhealth img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+/***FURWARD***/
+.furward {
+  align-items: center;
+  background-color: #fff;
+  border-radius:10rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: -10rem;
+}
+.furward .description {
+  margin: 0 auto;
+}
+.furward-img {
+  margin-left: -1rem;
+  max-width: 35rem;
+  padding-top: 5rem;
+}
+.furward-logo {
+  padding-bottom: 2.5rem;
+}
+.furward h2 {
+  padding-top: 0rem;
+}
+.furward img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/***CAMELOT***/
+ .camelot {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 7.5rem;
+  margin: -1.5rem auto 5rem;
+}
+.camelot-img {
+  padding-bottom: 5rem;
+  width:35rem;
+}
+.camelot img {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.description figure {
+  display: flex;
+  max-width: 100%;
+}
+/***BUSYBUS***/
+.busybus {
+  background-color: #fff;
+  border-radius:10rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -10rem;
+  padding-bottom: 10rem;
+}
+.busybus-img {
+  max-width: 100%;
+}
+.busybus img {
+  max-width: 24rem;
+  padding-top: 5rem;
+}
+.busybus  h1 {
+  text-align: center;
+}
+/***CONNECT***/
+#contact {
+  color: #fff;
+}
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 10rem;
+  padding: 10% 20% 1rem;
+  text-align: center;
+}
+.connect h2 {
+  color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 33ex;
+  text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+  color: #11a64a;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  max-width: 40%;
+}
+.social img {
+  padding: 1rem;
+  width: 6rem;
+}
+/***MEDIA QUERIES***/
+/***TABLET***/
+@media (min-width: 45rem) {
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav a img {
+    width: auto;
+  }
+  .description {
+    max-height: 50rem;
+  }
+      .cta {
+    margin-bottom: 0;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row;
+  }
+  .hero-img {
+    height: auto;
+    width: 50vw;
+  }
+  .hero .description {
+    margin: 10rem auto 0;
+    max-height: 40rem;
+  }
+  .hero .cta {
+    margin-bottom: 10rem;
+  }
+  .chordhealth {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .chordhealth-img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    max-width: 24rem;
+  }
+  .chordhealth-img img {
+    padding-bottom: 0;
+  }
+  .chordhealth-logo img {
+    max-width: 100%;
+  }
+  .furward {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .furward-img {
+    display: flex;
+    justify-content: center;
+    width: 38.4rem;
+  }
+  .furward-img img {
+    max-width: 45vw;
+    padding-bottom: 0;
+  }
+  .furward-logo img {
+    max-width: 100%;
+  }
+  .camelot {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 0 auto 5rem;
+  }
+  .camelot-img {
+    display: flex;
+    justify-content: center;
+    width: 38.4rem;
+  }
+  .camelot-img {
+    padding-bottom: 0;
+  }
+  .busybus {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .busybus-img {
+    display: flex;
+    justify-content: center;
+    width: 38.4rem;
+  }
+  .busybus img {
+    padding-bottom: 5rem;
+  }
+  .connect h2 {
+    font-size: 2rem;
+  }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
+}
+/***DESKTOP***/
+@media (min-width: 70rem) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-family: "Montserrat", "Open Sans",sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+  .cta {
+    margin: 0 auto;
+  }
+  .hero .description {
+    margin: 15rem auto 5rem;
+  }
+  .description {
+    max-width: 100ex;
+    min-width: 25rem;
+    padding: 5rem;
+  }
+  .description figure {
+    margin: 0 auto;
+  }
+  .project-text {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+  .chordhealth-img {
+    max-width: 25rem;
+  }
+  .furward-img {
+    max-width: 70rem;
+  }
+  .camelot {
+    align-items: center;
+    padding-bottom: 5rem;
+  }
+  .camelot-img {
+      width: 50vw;
+  }
+  .camelot-img img {
+    max-width: 45vw;
+  }
+  .camelot-logo {
+    margin: 0;
+  }
+  .busybus-img img {
+    max-width: 25rem;
+  }
+}

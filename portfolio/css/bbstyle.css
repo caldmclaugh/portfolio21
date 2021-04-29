@@ -1,0 +1,661 @@
+/**************************************busybus case study***/
+/*#E3EFFA #FFF7D5*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(#E2EFFA 25%, #FFF7D5  25%);
+  line-height: 1.75;
+}
+.links a:hover {
+  color: #11a64a;
+  text-decoration: underline;
+}
+.cta {
+  background-color: #056BBD;
+  border-radius: 5rem;
+  color: #fff;
+  display: block;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.5rem auto 5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+a.cta:hover {
+  background-color: #11a64a;
+}
+/***********************************************typography***/
+img {
+  width: 100%;
+}
+h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  font-weight:bold;
+  text-align: center;
+}
+h2 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+h3 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+p, li, h4, figcaption {
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+p {
+  margin: 0 auto;
+  max-width: 66ex;
+  padding: 0 1.5rem 2rem;
+}
+span, figcaption {
+  font-weight: bold;
+}
+figcaption {
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+ul {
+  font-weight: bold;
+  padding: 1rem 0;
+}
+ ul li {
+  font-size: 1.4rem;
+  font-weight: normal;
+  padding: .25rem 0;
+}
+/**************************NAV**************************/
+.navbar {
+  display: none;
+}
+ .hamburger-nav {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.cm-logo {
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
+  width:auto;
+  z-index: 5;
+}
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
+.btn-toggle-nav {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  z-index: 5;
+}
+
+.nav-menu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 7rem;
+  transition: all .7s ease-in-out;
+  width: 0rem;
+  z-index: 6;
+}
+.nav-menu ul {
+  padding: 0 .5rem 5rem;
+  visibility: hidden;
+}
+.nav-menu ul li {
+  list-style: none;
+  padding-top: 5rem;
+}
+.nav-menu ul li a  {
+  color: #056BBD;
+  display: block;
+  font-family: "Montserrat", "Open Sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 6rem;
+  opacity: 0;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/**********************************************************************HERO***/
+.hero {
+  background-color: #fff;
+  border-bottom-right-radius: 7.5rem;
+  padding: 7.5rem 1rem 1rem;
+  width: 100%;
+}
+.hero h1 {
+  padding: 1.5rem 0;
+}
+.hero h2 {
+  font-size: 1.6rem;
+  padding-bottom: 2.5rem;
+  padding-top: .5rem;
+}
+.hero img {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  padding-bottom:1.5rem;
+}
+/**********************************************PROBLEM/SOLUTION******/
+.prob-sol {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  padding: 5rem 1rem 0;
+  text-align: center;
+}
+.problem, .solution {
+  margin: 0 auto;
+  max-width: 66ex;
+}
+.icon-prob {
+  display: flex;
+  margin: 0 auto;
+  max-width: 6rem;
+  padding: 3.5rem 0 5rem;
+}
+.icon-sol {
+  display: flex;
+  margin: 0 auto;
+  max-width: 7rem;
+  padding: 2.5rem 0 5rem;
+}
+/*****************************************************************DISCOVERY***/
+.discovery {
+  background-color: #fff;
+  border-radius: 7.5rem 0 7.5rem;
+  padding: 5rem 0;
+  position: relative;
+}
+.discovery h2 {
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+.user-research {
+  padding: 1rem;
+}
+.chart {
+  margin: 0 auto;
+  width: 30rem;
+}
+  /******************************************************************STRATEGY***/
+ .strategy {
+  background-color:#FFF7D5;
+  margin-top: -7rem;
+  padding: 12rem 0 13rem;
+}
+.strategy h2  {
+  padding-bottom:2rem;
+  text-transform: uppercase;
+}
+          /***competitive analysis***/
+.comp-analysis {
+  padding: 0 1rem;
+}
+.comp-analysis img {
+  padding: .5rem;
+}
+.comp-img {
+  background-color: #fff;
+  border: .1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+}
+/**************************************************INFORMATION ARCHITECTURE***/
+.info-arch {
+  background-color:#FFF;
+  border-radius: 7.5rem 0 7.5rem;
+  margin-top: -8rem;
+  padding: 5rem 0 1rem 0;
+  position: relative;
+}
+.info-arch h2 {
+  padding: 0 1rem 2.5rem;
+  text-transform: uppercase;
+}
+         /*******user stories*************/
+.user-stories {
+  padding: 0 1rem;
+}
+.list-stories {
+  background-color: #fff;
+  border: .1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 35rem;
+  padding: 2rem;
+}
+.list-stories h4 {
+  font-weight: bold;
+  padding-top: 2.5rem;
+  width: 100%;
+}
+              /***paper prototype***/
+.paper {
+  padding: 5rem 1rem;
+}
+.paper img {
+  border: .1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0 auto;
+  max-width: 75%;
+}
+.paper figcaption {
+  padding: 3rem 0 5rem;
+}
+/* usability testing */
+.user-testing {
+  margin-top: -7rem;
+  padding: 1rem 1rem 2rem;
+}
+/*************************************************************VISUAL DESIGN***/
+.visual-design {
+  background-color:#E3EFFA;
+  margin-top: -6rem;
+  padding-bottom: 20rem;
+  padding-top: 12rem;
+}
+.visual-design h2 {
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+                  /***mockups***/
+.mockups {
+  padding: 0 1rem;
+}
+.mockups img {
+  border: .1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  display: block;
+  margin: 0 auto 3rem;
+  max-width: 75vw;
+}
+.mockups figure {
+    margin-bottom:5rem;
+}
+                /***final prototype***/
+.final {
+  padding: 0 1rem;
+}
+.final img {
+    border: .1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: .5rem;
+    box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: 0 auto 3rem;
+    max-width: 75%;
+}
+/****************************************************************CONCLUSION***/
+.conclusion {
+  background-color: #fff;
+  border-radius: 7.5rem 0;
+  margin-bottom: 5rem;
+  margin-top: -15rem;
+  padding: 5rem 1rem;
+  position: relative;
+  width: 100%;
+}
+.conclusion img {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  margin: 2rem auto 0;
+}
+.conclusion h2 {
+  font-size: 1.6rem;
+}
+.conc-list p {
+  padding: 0;
+  text-align: center;
+}
+/*********MORE PROJECTS********/
+.see-more {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.more {
+  padding-bottom: 3rem;
+}
+.more h1{
+  font-size: 2.4rem;
+}
+.chordhealth img {
+  width: 75%;
+}
+.chordhealth p, .furward p {
+  padding: 0 1rem;
+}
+.camelot, .furward {
+  align-items: center;
+  max-width: 66ex;
+  min-width: 50ex;
+}
+.chordhealth img, .furward img, .camelot img {
+  margin: auto 1rem;
+  max-width: 75%;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+.chordhealth, .furward, .camelot {
+  background-color: #fff;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 32rem;
+  padding: 0 1.5rem;
+}
+.camelot p, {
+  font-size: 1.6rem;
+  margin: -2rem 1rem;
+}
+.more h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight:bold;
+}
+.see-more {
+  min-width: 20rem;
+}
+/***CONNECT***/
+#contact {
+  font-weight: inherit;
+}
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 10rem;
+  padding: 10% 20% 1rem;
+  text-align: center;
+}
+.connect h2 {
+  color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 33ex;
+  text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+  color: #11a64a;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  max-width: 40%;
+}
+.social img {
+  padding: 1rem;
+  width: 6rem;
+}
+/*******************MEDIA QUERIES*********************/
+/* TABLET */
+@media screen and (min-width: 45rem) {
+/* typography */
+  p {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  h1{
+    font-size: 3.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+/******************NAV********************/
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+    text-decoration: none;
+  }
+/* hero */
+  .hero {
+    padding-top: 10rem;
+  }
+  .hero h2 {
+    font-size: 2.4rem;
+    margin: 0 auto;
+    max-width: 40ex;
+  }
+  .hero img {
+    max-width: 30vw;
+  }
+/* problem/solution */
+  .prob-sol {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .prob-sol h3 {
+    font-size: 2rem;
+  }
+  .prob-sol p {
+    padding: 2rem;
+  }
+/* competitive analysis */
+  .comp-analysis img {
+    padding: .5rem;
+  }
+  .comp-analysis figcaption {
+    padding-bottom: 0;
+  }
+  .comp-img {
+    margin: 0 auto;
+    max-width: 55rem;
+  }
+/* INFORMATION ARCHITECTURE */
+/* paper prototype */
+  .paper1, .paper2, .paper3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .paper img {
+    display: flex;
+    max-width: 100%;
+  }
+  .paper-img {
+    display: flex;
+  }
+/* VISUAL DESIGN */
+/* mockups */
+.mockups img, .final img {
+  max-width: 40vw;
+}
+/* SEE MORE PROJECTS */
+  .see-more {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 20rem;
+  }
+  .camelot p {
+    padding: 0 2rem;
+  }
+/* CONTACT */
+  .connect h2 {
+    font-size: 2rem;
+  }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 70rem) {
+/***************HERO**************/
+  .hero {
+    padding-top: 15rem;
+  }
+  .hero h2 {
+    margin: 4rem auto;
+  }
+  .hero figure {
+    margin: 0 auto;
+    max-width: 20vw;
+  }
+/******PROBLEM/SOLUTION******/
+  .prob-sol {
+    margin: 5rem auto;
+    max-width: 100rem;
+    padding: 5rem 2rem 0;
+    text-align: center;
+  }
+  .icon-sol {
+    padding-top: 3rem;
+  }
+/************DISCOVERY*****************/
+  .discovery h2 {
+    font-size: 2.4rem;
+    margin-left: 20vw;
+    padding: 4rem 0 4.5rem;
+    text-align: left;
+  }
+  .chart {
+    padding: 5rem 0;
+  }
+/************STRATEGY****************/
+  .strategy {
+    margin-bottom: 10rem;
+  }
+  .strategy h2 {
+    font-size: 2.4rem;
+    margin-left: 20vw;
+    padding: 5rem 0 4rem;
+    text-align: left;
+  }
+/****************INFORMATION ARCHITECTURE*****************/
+  .info-arch h2 {
+    font-size: 2.4rem;
+    margin-left: 20vw;
+    padding: 4rem 0 5rem;
+    text-align: left;
+  }
+  .paper-img {
+    margin: 0 auto;
+    max-width: 60vw;
+  }
+/*********VISUAL DESIGN*******/
+  .visual-design h2 {
+    font-size: 2.4rem;
+    margin-left: 20vw;
+    padding: 4rem 0 5rem;
+    text-align: left;
+  }
+  .mockups img, .final img {
+    margin: 0 auto;
+    max-width: 25vw;
+  }
+/********CONCLUSION**********/
+  .conclusion {
+    margin-bottom: 5rem;
+    padding-top: 10rem;
+  }
+  .conc-list {
+    display: grid;
+    grid-template-areas:
+    "roles-icon deliv-icon    tools-icon"
+    "roles      deliverables  tools";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    max-width: 64rem;
+    min-width: 24rem;
+  }
+  .roles {
+    grid-area: roles;
+  }
+  .deliverables {
+    grid-area: deliverables;
+    margin-bottom: 5rem;
+  }
+  .tools {
+    grid-area: tools;
+  }
+  .roles-icon {
+    grid-area: roles-icon;
+    margin: 0 auto;
+  }
+  .deliv-icon {
+    grid-area: deliv-icon;
+    margin: 0 auto;
+  }
+  .tools-icon {
+    grid-area: tools-icon;
+    margin: 0 auto;
+  }
+}

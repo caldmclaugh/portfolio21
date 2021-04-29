@@ -1,0 +1,809 @@
+/**************************************chord health case study***/
+/*#E3EFFA #FFF7D5*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: linear-gradient(#E2EFFA 50%, #FFF7D5  50%);
+  line-height: 1.75;
+}
+.links a:hover {
+  color: #11a64a;
+  text-decoration: underline;
+}
+.cta {
+  background-color: #056BBD;
+  border-radius: 5rem;
+  color: #fff;
+  display: block;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto 5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+}
+a.cta:hover {
+  background-color: #11a64a;
+}
+/************************************************structure***/
+img {
+  width: 100%;
+}
+section.prob-sol > figure, section.conclusion > figure {
+  width: 25% ;
+}
+/* back to top */
+.top-link {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 0;
+  cursor: pointer;
+  display: inline-flex;
+  height: 4rem;
+  justify-content: center;
+  margin: 0 1rem 1rem 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  transition: all .3s ease-in-out;
+  width: 4rem;
+  z-index: 5;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.top-link:hover {
+  background-color: #e2e2e2;
+}
+/***********************************************typography***/
+h1 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+h2 {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+h3 {
+  font-family: "Montserrat", "Open Sans",sans-serif;
+  font-size: 2.4rem;
+  font-weight:600;
+  line-height: 3.3rem;
+  text-align: center;
+}
+h4, p, li,figcaption {
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+p {
+  margin: 0 auto;
+  max-width: 66ex;
+  padding: 0 1.5rem 2rem;
+}
+span, figcaption {
+  font-weight: bold;
+}
+figcaption {
+  text-align: center;
+}
+ul {
+  font-weight: bold;
+  padding: 1rem 0;
+  text-align: center;
+}
+ ul > li {
+  font-size: 1.4rem;
+  font-weight: normal;
+  padding: .25rem 0;
+  text-align: center;
+}
+/**************************NAV**************************/
+.navbar {
+  display: none;
+}
+ .hamburger-nav {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.cm-logo {
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
+  width:auto;
+  z-index: 5;
+}
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
+.btn-toggle-nav {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  z-index: 5;
+}
+.btn-toggle-nav img {
+  width: auto;
+}
+.nav-menu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 7rem;
+  transition: all .7s ease-in-out;
+  width: 0rem;
+  z-index: 6;
+}
+.nav-menu ul {
+  padding: 0 .5rem 5rem;
+  visibility: hidden;
+}
+.nav-menu ul li {
+  list-style: none;
+  padding-top: 5rem;
+}
+.nav-menu ul li a  {
+  color: #056BBD;
+  display: block;
+  font-family: "Montserrat", "Open Sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 6rem;
+  opacity: 0;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+/**********************************************************************HERO***/
+.hero {
+  background-color: #fff;
+  border-bottom-right-radius: 7.5rem;
+  padding: 7.5rem 1rem 1rem;
+  width: 100%;
+  z-index: -5;
+}
+.chordhealth-logo, .text-hero {
+  padding: 1rem 0;
+}
+.chordhealth-logo {
+  margin: 0 auto;
+  max-width: 65vw;
+  padding: 5rem 0 0;
+}
+.chordhealth-mockup {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  padding: 1.5rem 0 2.5rem;
+}
+/**********************************************PROBLEM/SOLUTION******/
+.prob-sol {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 1rem 0;
+  text-align: center;
+}
+.problem, .solution {
+  margin: 0 auto;
+  max-width: 66ex;
+}
+.icon-prob {
+  display: flex;
+  margin: 0 auto;
+  max-width: 6rem;
+  padding: 3.5rem 0 5rem;
+}
+.icon-sol {
+  display: flex;
+  margin: 0 auto;
+  max-width: 7rem;
+  padding: 2.5rem 0 5rem;
+}
+/*****************************************************************DISCOVERY***/
+.discovery {
+  background-color: #fff;
+  border-radius: 7.5rem 0 7.5rem;
+  padding: 5rem 0;
+  position: relative;
+}
+.text-disc {
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+.summary {
+  padding: 1rem;
+}
+  /******************************************************************STRATEGY***/
+.strategy {
+  background-color: #FFF7D5;
+  margin-top: -7rem;
+  padding: 12rem 0 13rem;
+}
+.text-strat  {
+  padding-bottom:2.5rem;
+  text-transform: uppercase;
+}
+.info-arch {
+  background-color:#FFF;
+  border-radius: 7.5rem 0 7.5rem;
+  margin-top: -8rem;
+  padding: 5rem 0 1rem 0;
+  position: relative;
+}
+.text-info h3 {
+  padding: 0 1rem 2.5rem;
+  text-transform: uppercase;
+}
+         /*******user narratives*************/
+.narratives {
+  background-color: #fff;
+  border: .1rem solid rgba(0, 0, 0, 0.25);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: .5rem auto;
+  max-width: 40rem;
+  padding: 2.5rem 0;
+}
+.narratives h2 {
+  padding-bottom: 1rem;
+}
+         /*******user stories*************/
+.stories {
+  padding: 0 1rem;
+}
+.list-stories {
+  background-color: #fff;
+  border: .1rem solid rgba(0, 0, 0, 0.25);
+  border-radius: .5rem;
+  box-shadow: 0 .2rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 30rem;
+}
+.high-pri {
+  padding: 2rem 0 1rem;
+  text-decoration: underline;
+  width: 75%;
+}
+.provider {
+  padding-bottom:2rem;
+  width: 27rem;
+}
+.list-stories h4 {
+  font-weight: bold;
+  text-align: center;
+}
+.patient {
+  width: 27rem;
+}
+                 /***user flows***/
+.text-flows {
+  margin: 0 1rem;
+  padding-top: 5rem;
+}
+.img-flows {
+  padding-bottom: 5rem;
+}
+.img-flows figcaption {
+  padding: 2.5rem 0;
+}
+.swipe {
+  margin: -5rem 0 0 1rem ;
+  width: 3rem;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
+.card {
+  flex: 0 0 auto;
+}
+                 /***wireframes***/
+.web-wireframes {
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.mobile-wireframes {
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+  max-width: 25rem;
+}
+.mobile-wireframes-third {
+  padding: 0 1rem 5rem;
+  max-width: 100vw;
+}
+/*************************************************************VISUAL DESIGN***/
+.visual-design {
+  background-color:#FFF;
+  background-color:#E3EFFA;
+  margin-top: -6rem;
+  padding-bottom: 20rem;
+  padding-top: 12rem;
+  z-index: -1;
+}
+.text-visual h3 {
+  padding-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+                  /***mockups***/
+.web-mockups {
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+  width: 100%;
+}
+.mobile-mockups {
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+  max-width: 25rem;
+}
+                /***prototypes***/
+.prototype figcaption {
+  margin: -2rem auto 2.5rem;
+}
+.update-mock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 60rem;
+}
+/****************************************************************CONCLUSION***/
+.conclusion {
+  background-color: #fff;
+  border-radius: 7.5rem 0;
+  margin-bottom: 5rem;
+  margin-top: -15rem;
+  padding: 5rem 1rem;
+  position: relative;
+  width: 100%;
+}
+.conclusion img {
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.conc-list p {
+  padding: 0;
+}
+/*********MORE PROJECTS********/
+.more {
+  padding-bottom: 3rem;
+}
+.more h1{
+  font-size: 2.4rem;
+}
+.camelot img, .furward img {
+  margin: auto 1rem;
+  max-width: 75%;
+  padding-top: 5rem;
+}
+.busybus h2 {
+  font-size: 2.4rem;
+  height: 7.5rem;
+  margin-top: 5rem;
+}
+.busybus p {
+    font-size: 1.6rem;
+    margin: -1rem auto 2.2rem;
+}
+.furward {
+  align-items: center;
+  display: flex;
+}
+.busybus {
+  align-items: center;
+  display: flex;
+  max-width: 70ex;
+  min-width: 50ex;
+}
+.furward, .busybus, .camelot {
+  background-color: #fff;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  max-width: 32rem;
+  padding: 0 1.5rem;
+}
+.more h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight:bold;
+}
+.see-more {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+/***CONNECT***/
+#contact {
+  color: #fff;
+  font-weight: inherit;
+}
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 10rem;
+  padding: 10% 20% 1rem;
+  text-align: center;
+}
+.connect h2 {
+  color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 33ex;
+  text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+  color: #11a64a;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  max-width: 40%;
+}
+.social img {
+  padding: 1rem;
+  width: 6rem;
+}
+/*******************MEDIA QUERIES*********************/
+/* TABLET */
+@media screen and (min-width: 45rem) {
+/* typography */
+  p {
+    margin: auto;
+    padding: 2rem;
+  }
+  h1{
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+/* back to top   */
+.top-link {
+  height: 8rem;
+  margin: 0 3rem 3rem 0;
+  padding: 2.5rem;
+  width: 8rem;
+}
+/******************NAV********************/
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+    text-decoration: none;
+  }
+/* hero */
+  .chordhealth-logo {
+    margin: auto;
+    max-width: 50vw;
+  }
+  .text-hero {
+    margin: auto;
+    max-width: 40ex;
+  }
+  .chordhealth-mockup {
+    max-width: 40vw;
+  }
+/* problem/solution */
+  .prob-sol {
+    flex-direction: row;
+    margin: auto;
+  }
+  .icon-prob {
+    padding-top: 8.75rem;
+  }
+/* DISCOVERY */
+/* user personas */
+  .text-personas {
+    margin: 0 auto;
+}
+.narratives {
+  margin: 0 auto;
+}
+/* INFORMATION ARCHITECTURE */
+/* user stories */
+  .list-stories {
+    margin: auto;
+    max-width: 64rem;
+  }
+/* user flows */
+  .text-flows {
+    margin: 5rem auto 0;
+  }
+/* wireframes */
+  .text-wireframes {
+    margin: 5rem auto 0;
+  }
+  .mobile-wire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .mobile-wireframes-third {
+    margin: 0 auto;
+    width: 42rem;
+  }
+/* VISUAL DESIGN */
+/* mockups */
+.mobile-mock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* CONCLUSION */
+  .conclusion {
+    margin: -15rem auto 0;
+  }
+  .conc-list {
+    margin: auto;
+  }
+/* SEE MORE PROJECTS */
+  .see-more {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 20rem;
+  }
+  .busybus p {
+    padding: 0 2rem 2.5rem;
+  }
+/* CONTACT */
+  .connect h2 {
+    font-size: 2rem;
+  }
+  .social {
+    max-width: 33%;
+  }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
+}
+  /* DESKTOP */
+@media screen and (min-width: 70rem) {
+  .container {
+    width: 100%;
+  }
+/* typography */
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    text-align: left;
+  }
+  p {
+    margin: 0 auto;
+  }
+
+/***************HERO**************/
+  .hero {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+  .chordhealth-logo {
+    margin: 0 auto;
+    max-width: 100ex;
+    padding-top: 5rem;
+  }
+  .text-hero {
+    margin: 5rem auto;
+    max-width: 50ex;
+    min-width: 33ex;
+  }
+  .chordhealth-mockup {
+    max-width: 20vw;
+  }
+/******PROBLEM/SOLUTION******/
+  .prob-sol {
+    margin: 5rem auto;
+    max-width: 100rem;
+    padding: 5rem 2rem 0;
+    text-align: center;
+  }
+  .icon-sol {
+    padding-top: 2rem;
+  }
+/************DISCOVERY*****************/
+  .text-disc {
+    margin: 5rem 0 2.5rem 20vw;
+    text-transform: uppercase;
+  }
+/************STRATEGY****************/
+  .strategy {
+    padding: 12rem 0 16rem;
+  }
+  .text-strat {
+    margin: 5rem 0 2.5rem 20vw;
+    text-transform: uppercase;
+  }
+/****************INFORMATION ARCHITECTURE*****************/
+  .text-info {
+    margin: 5rem 0 2.5rem 20vw;
+  }
+/* user stories */
+  .user-stories {
+    margin-bottom: 7.5rem;
+  }
+  .stories {
+    margin-bottom: .5rem;
+  }
+  .high-pri {
+    grid-area: high-pri;
+  }
+  .provider {
+    grid-area: provider;
+  }
+  .patient {
+    grid-area: returning-user;
+  }
+/* user flows */
+   .text-flows {
+    margin-bottom: .5rem;
+  }
+  .swipe {
+    display: none;
+  }
+/* wireframes */
+  .text-wireframes {
+    margin-bottom: .5rem;
+  }
+  .web-wire, .mobile-wire {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: auto;
+    max-width: 100vw;
+  }
+  .existing-dash {
+    padding-bottom: 10rem;
+  }
+  .existing-patient {
+    padding-bottom: 16rem;
+  }
+/*********VISUAL DESIGN*******/
+  .visual-design {
+    margin-bottom: -12.5rem;
+  }
+  .text-visual {
+    margin: 5rem 0 2.5rem 20vw;
+  }
+/* mockups */
+  .mockups {
+    padding-bottom: 5rem;
+  }
+  .text-mockups {
+    margin-bottom: .5rem;
+    padding-top: 2.5rem;
+  }
+  .img-mock {
+    margin: 0 auto;
+    max-width: 70vw;
+  }
+/**********prototypes**********/
+  .prototypes {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-prototypes {
+    margin-bottom: 5rem;
+  }
+/********CONCLUSION**********/
+  .conclusion {
+    margin-bottom: 5rem;
+    padding-top: 10rem;
+  }
+  .text-conclusion {
+    margin-bottom: 7.5rem;
+  }
+  .conc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "roles-icon deliv-icon    tools-icon"
+    "roles      deliverables  tools";
+    max-width: 64rem;
+    min-width: 24rem;
+  }
+  .roles h2, .deliverables h2, .tools h2 {
+      padding-bottom: 2.5rem;
+  }
+  .roles {
+    grid-area: roles;
+  }
+  .deliverables {
+    grid-area: deliverables;
+    margin-bottom: 5rem;
+  }
+  .tools {
+    grid-area: tools;
+  }
+  .roles-icon {
+    grid-area: roles-icon;
+    margin: 0 auto;
+  }
+  .deliv-icon {
+    grid-area: deliv-icon;
+    margin: 0 auto;
+  }
+  .tools-icon {
+    grid-area: tools-icon;
+    margin: 0 auto;
+  }
+}

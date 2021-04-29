@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furward Case Study</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:400,700|Montserrat:400,600,800|Ubuntu:700|Nunito|Quicksand&display=swap">
+    <link rel="stylesheet" href="css/furward-style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+<!--nav-->
+    <nav>
+      <div class="navbar">
+        <a class="cm-logo" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+        <div class="links">
+          <a class="about" href="bio.html">About</a>
+          <a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a>
+          <a class="contact" href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="hamburger-nav">
+        <a class="cm-logo hamburger" href="index.html"><img src="../images/logo.svg" alt="Caleigh McLaughlin logo"></a>
+        <i class="btn-toggle-nav" onclick="toggleNav()"><img src="images/menu.svg" alt="hamburger menu"></i>
+      </div>
+      <aside class="nav-menu">
+        <ul>
+          <li><a class="home" href="index.html">Home</a></li>
+          <li><a class="about" href="bio.html">About</a></li>
+          <li><a class="resume" href="cmclaughlinresume.pdf" target="_blank">Resume</a></li>
+          <li><a class="contact" href="contact.html">Contact</a></li>
+        </ul>
+      </aside>
+    </nav>
+<!--container-->
+    <main class="container">
+      <a id="top"></a>
+      <a class="top-link hide" href="" id="js-top"><img src="images/to-top.svg" alt="back to top icon"></a>
+<!--hero-->
+      <section class="hero">
+        <figure class="furward-logo">
+          <img src="images/furward-logo.svg" alt="Furward logo">
+        </figure>
+        <h1 class="text-hero">Furward takes the stress off of pet owners and their pets with a platform where neighbors can exchange pet care for free.</h1>
+        <figure class="furward-mockup">
+          <img src="images/furward-mockup.png" alt="Furward mockup">
+        </figure>
+        <a class="cta" href="https://bit.ly/furward" target="_blank">See prototype</a>
+      </section>
+<!--problem/solution-->
+      <section class="prob-sol">
+        <div class="problem">
+          <h2 class="title-prob">Problem</h2>
+            <p class="text-prob">
+            Pet care is challenging for many pet owners. Some issues include professional pet care expenses,  guilt about leaving pets away from home or with strangers, and feelings of imposition on friends and family. Pet owners want to take good care of their pets, but they don’t always have options that allow them to travel without worry.
+            </p>
+          <figure class="icon-prob">
+            <img src="images/problem.svg" alt="Problem icon">
+          </figure>
+        </div>
+        <div class="solution">
+          <h2 class="title-sol">Solution</h2>
+            <p class="text-sol">
+             Furward is a platform where users can connect to nearby pet owners and swap pet care for free. It eliminates costly pet care and allows pets to stay with neighbors near home where they’re comfortable. The reciprocal nature of the app allows users to return the favor when someone watches their pet, reducing feelings of imposition on others in their network.
+            </p>
+          <figure class="icon-sol">
+            <img src="images/solution.svg" alt="Solution icon">
+          </figure>
+        </div>
+      </section>
+<!--DISCOVERY-->
+      <section class="discovery">
+        <div class="text-disc">
+          <h3>Discovery</h3>
+        </div>
+<!--user research-->
+        <div class="user-research">
+          <h2>User research</h2>
+          <p>
+            My main assumption that I wanted to test going into this research was that <span>paid pet care is expensive</span>, and people would rather rely on family or friends to look after their pets than pay for pet care. I found this assumption to be true, but there are a number of other factors I discovered that people care about when it comes to pet care. For one, it is important to people that their pets receive quality care. People also don’t like leaving their pets with strangers, and would rather have them stay at home where they’re comfortable. Another valuable thing I learned was that <span>people overall said they would be open to trading pet care for free</span>.
+          </p>
+          <figure class="chart">
+            <figcaption>What do you like least about using a pet care service?</figcaption>
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </figure>
+          <p>
+            Something I learned in receiving feedback about my survey was that some of the questions I asked were leading. For example, I asked, “What is the main reason you used a pet care service?” and the first answer option was, “I didn’t have friends or family in town that could look after my pets.” I made an assumption that people would go to friends or family before considering professional pet care, which made the question seem biased against paid pet care. I realize that some of my survey results may have been skewed by this bias, and if I were to conduct this research again, I would revise the questions to have a more neutral tone.
+          </p>
+          <p>
+            Another thing I realized after completing my analysis was that 73.3% of my participants were between the ages of 19 and 34. I had been generalizing by saying “people” to describe my participants, when the vast majority of them were millennials. This was another bias I looked past and while I did not intend for this app to be for millenials only, I have to consider that my survey results are mainly representative of this population.
+          </p>
+        </div>
+      </section>
+<!--STRATEGY-->
+      <section class="strategy">
+        <h3 class="text-strat">Strategy</h3>
+<!--competitive analysis-->
+        <div class="comp-analysis">
+          <h2>Competitive analysis</h2>
+            <p>
+              When I began to research other pet care companies, almost all were paid pet sitting services. The three I found most similar to my idea were TrustedHousesitters, Dogma.me, and Petfam. TrustedHousesitters matches pet sitters with homeowners with pets, and sitters exchange pet care for a place to stay. This company is targeted mainly at travelers and has an annual fee. While free pet care is involved, the services exchanged are different on each end, so my app would have a different mission altogether. Additionally, I want my app to be completely free which is a differentiator in today’s pet care market.
+            </p>
+            <p>
+              Dogma and Petfam both provide free pet care and have a similar mission to mine. Petfam also has an annual fee, so while the pet care itself is free, users pay $75 upfront. The drawbacks of both Dogma and Petfam are their limited user population, with Dogma limited to a few US cities and Petfam mostly in Canada. My app could benefit users in locations unreached by these services. Additionally, neither has a mobile app, so I found an opportunity to create an app for exchanging free pet care that does not yet exist.
+            </p>
+          <div class="comp-img">
+            <div class="dogma">
+              <figure>
+                <img src="images/dogma.png" alt="Dogma screenshot">
+              </figure>
+              <div class="swot">
+                <h2>Dogma</h2>
+                <div class="sw">
+                  <div class="strengths">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Clean, well-organized, easily navigable website</li>
+                      <li>Content feels trustworthy, connects to users emotionally</li>
+                      <li>Saves users money while connecting neighbors</li>
+                    </ul>
+                  </div>
+                  <div class="weaknesses">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                      <li>Only 5 locations in U.S.</li>
+                      <li>No mobile app</li>
+                      <li>Limited midday care</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ot">
+                  <div class="opportunities">
+                    <h4>Opportunities</h4>
+                    <ul>
+                      <li>Expand locations to broaden user base</li>
+                      <li>Create a mobile app</li>
+                      <li>Target people who work from home to increase midday care</li>
+                    </ul>
+                  </div>
+                  <div class="threats">
+                    <h4>Threats</h4>
+                    <ul>
+                      <li>Competitors with more reach</li>
+                      <li>Since free, no guarantee of decent customer service</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trustedhousesitters">
+              <figure>
+                <img class="trusted-img" src="images/trusted.png" alt="TrustedHousesitters screenshot">
+              </figure>
+              <div class="swot">
+                <h2>TrustedHousesitters</h2>
+                <div class="sw">
+                  <div class="strengths">
+                    <h4>Strengths</h4>
+                    <ul>
+                      <li>Simple, straightforward site</li>
+                      <li>Allows for pets to stay in their homes</li>
+                      <li>Saves travelers money</li>
+                      <li>Mobile app</li>
+                    </ul>
+                  </div>
+                  <div class="weaknesses">
+                    <h4>Weaknesses</h4>
+                    <ul>
+                      <li>Complaints of poor customer service and reachability</li>
+                      <li><span>Limited protection for sitters and homeowners</span></li>
+                      <li><span>Disproportionate sitter:owner ratio</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ot">
+                  <div class="opportunities">
+                    <h4>Opportunities</h4>
+                    <ul>
+                      <li>Improve customer service</li>
+                      <li>Increase vetting for new sitters to help even out the ratio</li>
+                    </ul>
+                  </div>
+                  <div class="threats">
+                    <h4>Threats</h4>
+                    <ul>
+                      <li>Poor reviews may streak company reputation over time</li>
+                      <li>User loss due to customer service frustration</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--user personas-->
+        <div class="personas">
+          <div class="text-personas">
+            <h2>User personas</h2>
+              <p>
+                I created three personas for users of a free pet care exchange app. One user is a cat owner in a new city who wants to travel and make friends while saving money on pet care. Another is a dog owner who needs help walking his dog on long workdays. The third is another dog owner who wants to find care for her dog on short notice and avoid inconveniencing friends.
+              </p>
+          </div>
+          <div class="persona-img">
+            <figure class="mai">
+              <img src="images/mai.png" alt="Mai persona">
+                <figcaption>
+                  <h2>Mai</h2>
+                  <h3>Journalist</h3>
+                  <div class="mai-text">
+                    <div class="frustrations">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li><p>costly pet care options</p></li>
+                        <li><p>not knowing anyone in a new city</p></li>
+                        <li><p>guilt when she leaves her cats alone</p></li>
+                      </ul>
+                    </div>
+                    <div class="goals">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li><p>find someone to watch her cats when she travels</p></li>
+                        <li><p>spend less on pet care without compromising quality</p></li>
+                        <li><p>make friends in a new city</p></li>
+                        <li><p>travel guilt-free</p></li>
+                      </ul>
+                    </div>
+                </div>
+                </figcaption>
+            </figure>
+            <figure class="nick">
+              <img src="images/nick.png" alt="Nick persona">
+                <figcaption>
+                  <h2>Nick</h2>
+                  <h3>Landscaper</h3>
+                  <div class="nick-text">
+                    <div class="frustrations">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li><p>spending his lunch break taking his dog out</p></li>
+                        <li><p>feeling drained and not giving his dog adequate attention</p></li>
+                      </ul>
+                    </div>
+                    <div class="goals">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li><p>find someone to walk his dog on long workdays</p></li>
+                        <li><p>keep his dog healthy and happy</li>
+                        <li><p>save time and energy during the work week</li>
+                      </ul>
+                    </div>
+                </div>
+                </figcaption>
+            </figure>
+            <figure class="sami">
+              <img src="images/sami.png" alt="Sami persona">
+                <figcaption>
+                  <h2>Sami</h2>
+                  <h3>Server</h3>
+                  <div class="sami-text">
+                    <div class="frustrations">
+                      <h4>Frustrations</h4>
+                      <ul>
+                        <li><p>expensive LA life</p></li>
+                        <li><p>paying for last minute dog care</p></li>
+                      </ul>
+                    </div>
+                    <div class="goals">
+                      <h4>Goals</h4>
+                      <ul>
+                        <li><p>find last minute dog care</p></li>
+                        <li><p>save money</p></li>
+                        <li><p>avoid inconveniencing friends</p></li>
+                      </ul>
+                    </div>
+                </div>
+                </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+<!--INFORMATION ARCHITECTURE-->
+      <section class="info-arch">
+        <div class="text-info">
+          <h3>Information architecture</h3>
+        </div>
+<!--user stories-->
+        <div class="user-stories">
+          <div class="stories">
+            <h2>User stories</h2>
+              <p>
+                I wrote user stories with my personas in mind, and prioritized them based on importance for the minimum viable product. The high priority stories allow users to set up pet care through a safe platform, view and respond to nearby posts, create posts, view user profiles and message other users.
+              </p>
+          </div>
+          <div class="list-stories">
+            <h2 class="high-pri">High priority stories</h2>
+            <div class="new-user">
+              <h4>As a new user, I want to...</h4>
+              <ul>
+                <li>set up my account and profile</li>
+                <li>add photos of me and my pet(s)</li>
+                <li>sign up for an account via email</li>
+              </ul>
+            </div>
+            <div class="owner">
+              <h4>As a pet owner/sitter, I want to...</h4>
+              <ul>
+                <li>set up pet care through an app platform</li>
+                <li>view a list of nearby sitters/owners</li>
+                <li>view all posts in my neighborhood</li>
+                <li>respond to a request for pet sitting</li>
+                <li>post a new request for pet sitting</li>
+                <li>view other users' profiles</li>
+                <li>message other users</li>
+                <li>log into my account via email</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+<!--user flows-->
+        <div class="user-flows">
+          <div class="text-flows">
+            <h2>User flows</h2>
+              <p>
+                I created user flows for five aspects of my project, including onboarding, creating and responding to posts, actions from dashboard feed and map, messaging and editing an account. These flows helped me to map out the different steps that I would need to make the app intuitive to navigate through, and came in handy when I went to do my wireframes.
+              </p>
+          </div>
+          <div class="img-flows">
+            <figure class="map">
+              <img src="images/mapview.svg" alt="map view user flow">
+                <figcaption>Map view</figcaption>
+            </figure>
+            <figure class="onboarding">
+              <img src="images/onboarding.svg" alt="onboarding user flow">
+                <figcaption>Onboarding</figcaption>
+            </figure>
+            <figure class="create">
+              <img src="images/create.svg" alt="creating/responding to posts user flow">
+                <figcaption>Creating & Responding to posts</figcaption>
+            </figure>
+            <figure class="messaging">
+              <img src="images/messaging.svg" alt="messaging user flow">
+                <figcaption>Messaging</figcaption>
+            </figure>
+            <figure class="account">
+              <img src="images/account.svg" alt="account user flow">
+                <figcaption>Account</figcaption>
+            </figure>
+          </div>
+          <div class="img-flows-mq">
+            <figure class="map">
+              <img src="images/map-z.svg" alt="map view user flow">
+                <figcaption>Map view</figcaption>
+            </figure>
+            <div class="row">
+              <div class="column">
+                <figure class="onboarding">
+                  <img src="images/onboarding-mq.svg" alt="onboarding user flow" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    <figcaption>Onboarding</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="create">
+                  <img src="images/create-mq.svg" alt="creating/responding to posts user flow" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  <figcaption>Creating/responding to posts</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="messaging">
+                  <img src="images/messaging-mq.svg" alt="messaging user flow" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  <figcaption>Messaging</figcaption>
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="account">
+                  <img src="images/account-mq.svg" alt="account user flow" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                  <figcaption>Account</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <figure>
+                    <img src="images/onboarding.svg" alt="onboarding" style="width:100%">
+                    <figcaption>Onboarding</figcaption>
+                  </figure>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <figure>
+                    <img src="images/create.svg" alt="creating/responding to posts user flow" style="width:100%">
+                    <figcaption>Creating/Responding to posts</figcaption>
+                  </figure>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                    <figure>
+                      <img src="images/messaging.svg" alt="messaging user flow" style="width:100%">
+                      <figcaption>Messaging</figcaption>
+                  </figure>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                    <figure>
+                      <img src="images/account.svg" alt="account user flow" style="width:100%">
+                      <figcaption>Account</figcaption>
+                  </figure>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--wireframes-->
+        <div class="wireframes">
+          <div class="text-wireframes">
+            <h2>Wireframes</h2>
+              <p>
+                I created digital wireframes with Figma with the content I intended to include in the final prototype. For my first iteration, I relied heavily on my user stories and user flows as I went through each screen to make sure everything flowed in a sensible way. I only made minor changes in my second iteration, one of which was changing the layout on the “New Post” screen to give users more room to add details or their request.
+              </p>
+          </div>
+          <div class="new-post">
+            <figure class="new-post-wire">
+              <img class="img-border" src="images/newpost1.jpg" alt="new post wireframe 1st iteration">
+              <figcaption>
+                <p>1st iteration New Post</p>
+                <figure class="blue-new-post"></figure>
+              </figcaption>
+            </figure>
+            <figure class="new-post-wire">
+              <img class="img-border" src="images/newpost2.jpg" alt="new post wireframe 2nd iteration">
+              <figcaption>
+                <p>2nd iteration New Post</p>
+                <figure class="green-new-post"></figure>
+              </figcaption>
+            </figure>
+          </div>
+              <p>
+                Another change I made was in response to feedback that the “Write a post” bar looked more like a search bar than a place to write a post. I decided to make that into a search bar and added a compose icon next to it to symbolize the “New Post” action.
+              </p>
+          </div>
+          <div class="feed">
+            <figure class="feed-wire">
+              <img class="img-border" src="images/feed1.jpg" alt="dashboard sketch">
+              <figcaption>
+                <p>1st iteration Feed</p>
+                <figure class="blue-feed-wire"></figure>
+              </figcaption>
+            </figure>
+            <figure class="feed-wire">
+              <img class="img-border" src="images/feed2.jpg" alt="dashboard wireframe">
+              <figcaption>
+                <p>2nd iteration Feed</p>
+                <figure class="green-feed-wire"></figure>
+              </figcaption>
+            </figure>
+          </div>
+        <a class="cta" href="https://bit.ly/furward-wireframes" target="_blank">See all wireframes</a>
+    </section>
+<!--VISUAL DESIGN-->
+      <section class="visual-design">
+        <div class="text-visual">
+          <h3>Visual design</h3>
+        </div>
+<!--logo-->
+        <div class="logo">
+          <div class="text-logo">
+            <h2>Logo</h2>
+              <p>
+                The idea for the brand name and logo is from the reciprocal nature of the app, where users pay it forward and help each other out with free pet sitting. I thought adding the pun would make it obvious that the app has to do with animals, and I wanted it to have a friendly cutesy feel to match the positive emotions surrounding pet ownership. The logo I created consists of the word “FURWARD” in with the “D” made into a sideways paw print. I thought about filling in  the “D” to make it solid and more like a paw print, but I was worried that the logo might read “furwar” for some. The symbol part of the logo without text is simply the “D” and paw print alone.
+              </p>
+          </div>
+          <div class="logo-img">
+            <figure class="logo">
+              <img src="images/furwardlogo.png" alt="Furward logos">
+              <figcaption>Logos</figcaption>
+            </figure>
+          </div>
+        </div>
+<!--typography-->
+        <div class="typography">
+          <div class="text-type">
+            <h2>Typography</h2>
+              <p>
+                I decided on Quicksand for the brand typeface and Nunito for the complementary typeface. Quicksand has a rounded, geometric shape to it which I felt looked both friendly and strong. I want the typeface to show that the app is approachable, but also have a boldness that shows users that it is trustworthy. Nunito has a similar rounded and geometric shape, and is legible at all sizes. Readability is especially important since it is for an app, where users will be viewing the typeface in small sizes.
+              </p>
+          </div>
+          <figure class="type">
+            <div class="quicksand">
+            <h3>Quicksand</h3>
+              <ul>
+                <li>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+                <li>abcdefghijklmnopqrstuvwxyz</li>
+                <li>0123456789</li>
+              </ul>
+            </div>
+            <div class="nunito">
+            <h3>Nunito</h3>
+              <ul>
+                <li>ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+                <li>abcdefghijklmnopqrstuvwxyz</li>
+                <li>0123456789</li>
+              </ul>
+            </div>
+            <figcaption>Typography</figcaption>
+          </figure>
+        </div>
+<!--color palette-->
+        <div class="color-palette">
+          <div class="text-color">
+            <h2>Color palette</h2>
+              <p>
+                My color palette consists of chetwode blue, mandy red, quartz white, and fuscous grey. I chose chetwode blue because I want users to trust in the product, and this cool hue mixes the calmness and responsibility of blue and the romance of purple. I chose the mandy red because I want to represent the passion and love people have for their pets, and these qualities are associated with red. This hue is more of a pastel, which softens it and appears less harsh than a bright red which is also associated with fire and violence. The quartz white is a neutral color that contrasts well with the accent colors, and which mixes the cleanliness and simplicity of white with the calmness, responsibility and romance of the chetwode blue. I chose the fuscous grey to be a neutral, contrasting color that is sophisticated and softer on the eyes than stark black.
+              </p>
+          </div>
+          <figure class="img-color">
+            <img src="images/color.png" alt="color palette">
+            <figcaption>Colors</figcaption>
+          </figure>
+        </div>
+<!--prototypes-->
+        <div class="prototypes">
+          <div class="text-prototypes">
+            <h2>Prototypes</h2>
+            <p>
+              With mockups strengthened with initial feedback, I went on to create a prototype. I linked my mockups together in Figma and tested it out through usability testing. I found that all three of my participants were able to perform each task I asked of them with little hesitation. However, my first usability test provided virtually all of the edits I would make in the next iteration.
+            </p>
+            <p>
+              My first participant had a different idea about what the paw print location pins and home location pins meant than what I intended. In my next iteration, I added a screen to the prototype that responds when a user touches the home location pin, so that the user can see the difference between this one and the paw print location pin.
+            </p>
+            <div class="prototype-img">
+              <figure class="mapview">
+                <img src="images/map.png" alt="map view">
+                <figcaption>
+                  <p>Map 1st it</p>
+                  <figure class="blue-map-1"></figure>
+                  <figure class="blue-map-2"></figure>
+                </figcaption>
+              </figure>
+              <figure class="mapother">
+                <img src="images/mapother.png" alt="map view other user">
+                <figcaption>
+                  <p>Map other user 1st it</p>
+                  <figure class="blue-map-1"></figure>
+                  <figure class="blue-map-2"></figure>
+                </figcaption>
+              </figure>
+              <figure  class="mapme">
+                <img src="images/mapme.png" alt="map view current user">
+                <figcaption>
+                  <p>Map current user 2nd it</p>
+                  <figure class="green-map-2"></figure>
+                </figcaption>
+              </figure>
+            </div>
+            <p>
+              Secondly, this participant commented that the shades of red on the tab bar indicating the unselected icons made them look inactive, which prompted me to try out a different shade there. I swapped out the dark shade for a lighter version of the red and ran a preference test to see which performed better. The lighter shade was preferred by 63% of participants, so I changed the icons in the second iteration.
+            </p>
+            <div class="tabbar">
+              <figure class="tabdark">
+                <img src="images/chat1.png" alt="tab bar dark">
+                <figcaption>
+                  <p>Tab bar dark</p>
+                  <figure class="blue-tabdark"></figure>
+                </figcaption>
+              </figure>
+              <figure class="tablight">
+                <img src="images/chat2.png" alt="tab bar light">
+                <figcaption>
+                  <p>Tab bar light</p>
+                  <figure class="green-tablight"></figure>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <a class="cta" href="https://bit.ly/furward" target="_blank">See prototype</a>
+      </section>
+<!--CONCLUSION-->
+      <section class="conclusion">
+        <div class="title-conclusion">
+          <h2>Conclusion</h2>
+        </div>
+        <div class="text-conclusion">
+          <p>
+            I solved the problems with current pet care practices by creating an app that allows users to connect to nearby pet owners and swap free pet care on a pay-it-forward basis. The design process informed the decisions I made from concept to clickable prototype, and I learned some things along the way. My initial assumptions were supported by my user research, but I learned that the results may have been skewed by the wording of some of my questions and my millenial-heavy sample. Given more time, I would rephrase some of the questions in my survey and deploy it a second time to see how the results change. I would also target participants over the age of 34 to balance out the age representation. I will remember the shortcomings of this project, namely in the user research step, and make a point to avoid these to strengthen future designs.
+          </p>
+        </div>
+        <div class="conc-list">
+          <figure class="roles-icon">
+            <img src="images/roles.svg" alt="roles icon">
+          </figure>
+          <div class="roles">
+            <h2>Roles</h2>
+            <ul>
+              <li><p>User research</p></li>
+              <li><p>Information architecture</p></li>
+              <li><p>Branding</p></li>
+              <li><p>Visual design</p></li>
+              <li><p>Usability testing</p></li>
+              <li><p>Mockup iteration</p></li>
+            </ul>
+          </div>
+          <figure class="deliv-icon">
+            <img src="images/deliverables.svg" alt="deliverables icon">
+          </figure>
+          <div class="deliverables">
+            <h2>Deliverables</h2>
+            <ul>
+              <li><p>User surveys</p></li>
+              <li><p>Competitive analysis</p></li>
+              <li><p>User personas</p></li>
+              <li><p>User stories</p></li>
+              <li><p>User flows</p></li>
+              <li><p>Wireframes</p></li>
+              <li><p>Branding</p></li>
+              <li><p>High fidelity mockups</p></li>
+              <li><p>Clickable prototype</p></li>
+            </ul>
+          </div>
+          <figure class="tools-icon">
+            <img src="images/tools.svg" alt="tools icon">
+          </figure>
+          <div class="tools">
+            <h2>Tools</h2>
+            <ul>
+              <li><p>Figma</p></li>
+              <li><p>UsabilityHub</p></li>
+              <li><p>InVision</p></li>
+              <li><p>Whimsical</p></li>
+              <li><p>draw.io</p></li>
+              <li><p>Google Sheets</p></li>
+              <li><p>Google Forms</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+<!--MORE PROJECTS-->
+      <section class="more">
+        <h1>See more projects</h1>
+        <div class="see-more">
+          <div class="chordhealth">
+            <figure>
+              <img src="images/chordhealth-logo.svg" alt="Chord Health logo">
+            </figure>
+            <p>Chord Health helps patients with musculoskeletal conditions understand and manage risk factors for chronic pain through a mobile app.</p>
+            <a class="cta" href="chordhealth-project.html">See case study</a>
+          </div>
+          <div class="camelot">
+            <figure>
+              <img src="images/camelot-logo.svg" alt="Camelot logo">
+            </figure>
+            <p>Camelot offers a cloud storage solution for users who need to store and send large amounts of data in a secure and simple interface.</p>
+            <a class="cta" href="camelot-project.html">See case study</a>
+          </div>
+          <div class="busybus">
+            <h2>BusyBus</h2>
+            <p>BusyBus is a mobile public transit app that informs riders of ETA's for multiple busses using the same stop.</p>
+            <a class="cta" href="bbproject.html">See case study</a>
+          </div>
+        </div>
+      </section>
+      <!--footer-->
+      <footer class="connect">
+        <h2><a id="contact">Like what you see?</a></h2>
+        <h2>Feel free to send me an <a href="contact.html">email</a> or connect with me on <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank">LinkedIn</a>.</h2> <h2>I'd love to hear from you!</h2>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/caleighmclaughlin/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+          <a href="https://github.com/caldmclaugh" target="_blank"><img src="images/github.svg" alt="Github icon"></a>
+          <a href="contact.html"><img src="images/email.svg" alt="email icon"></a>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ["It is expensive                                                   ", "Uncomfortable leaving pet(s) away from home", "I don't trust people I don't know with pet care ", "Distance is an issue                                          ", "Other                                                                 "],
+            datasets: [{
+                label: '% of Votes',
+                data: [.476, .286, .095, .0953, .0477],
+                backgroundColor: [
+                    'rgba(5, 107, 189, 100)',
+                    'rgba(20, 166, 67, 100)',
+                    'rgba(243, 204, 45, 100)',
+                    'rgba(46, 159, 249, 100)',
+                    'rgba(71, 217, 118, 100)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+    <script src="script.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156891890-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-156891890-1');
+    </script>
+  </body>
+</html>

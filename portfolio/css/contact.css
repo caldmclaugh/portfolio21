@@ -1,0 +1,268 @@
+/*portfolio*/
+/*#E3EFFA #FFF7D5*/
+
+/*** structure ***/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background: #FFF7D5;
+  line-height: 1.75;
+}
+.container {
+  width: 100%;
+}
+.links a:hover {
+  color: #11a64a;
+  text-decoration: underline;
+}
+.cta {
+  background-color: #056BBD;
+  border: none;
+  border-radius: 5rem;
+  color: #fff;
+  display: block;
+  font-family: "Montserrat","Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  text-align: center;
+  text-decoration: none;
+  width: max-content;
+  z-index: 2;
+}
+button.cta:hover {
+  background-color: #11a64a;
+}
+/***typography***/
+h1 {
+  font-family: "Ubuntu", "Open Sans", sans-serif;
+  font-size: 3.2rem;
+  text-align: center;
+}
+h2 {
+  /* display: block; */
+  font-family: "Cabin","Open Sans", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+}
+ul > li {
+  text-align: center;
+}
+/***NAV***/
+nav {
+  margin-top: -10rem;
+}
+.navbar {
+  display: none;
+}
+ .hamburger-nav {
+  align-items: center;
+  background-color: #fff;
+  border-bottom: .1rem solid rgb(243, 204, 45, 1);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  margin-top: 10rem;
+  opacity: .95;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+.cm-logo {
+  align-items:center;
+  display: flex;
+  padding-left: 1rem;
+  width:auto;
+  z-index: 5;
+}
+.hamburger-nav .cm-logo {
+  width: 6rem;
+}
+.btn-toggle-nav {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  z-index: 5;
+}
+.nav-menu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 7rem;
+  transition: all .7s ease-in-out;
+  width: 0rem;
+  z-index: 6;
+}
+.nav-menu ul {
+  padding: 0 .5rem 5rem;
+  visibility: hidden;
+}
+.nav-menu ul li {
+  list-style: none;
+  padding-top: 5rem;
+}
+.nav-menu ul li a  {
+  color: #056BBD;
+  display: block;
+  font-family: "Montserrat", "Open Sans", "sans-serif";
+  font-size: 2.4rem;
+  font-weight: 600;
+  height: 6rem;
+  opacity: 0;
+  padding: 0 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+/***FORM***/
+.form {
+  background-color: #fff;
+  border-bottom-right-radius: 10rem;
+  padding: 1rem 0 1rem;
+  padding-top: 1rem;
+}
+form {
+  background-color: #fff;
+  margin: 19rem auto 5rem;
+  width: max-content;
+}
+input {
+  height: 5rem;
+  width: 30rem;
+}
+textarea {
+  height: 15rem;
+  padding-top: 1rem;
+  width: 30rem;
+}
+input, textarea {
+  border: .1rem solid rgba(0, 0, 0, 0.15);
+  border-radius: .5rem;
+  display: block;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  margin: 5rem auto;
+  padding-left: 1rem;
+}
+/***CONNECT***/
+#contact {
+  font-weight: inherit;
+}
+.connect {
+  background-color: #056BBD;
+  border-top-left-radius: 10rem;
+  margin-top: 5rem;
+  padding: 10% 20% 1rem;
+  text-align: center;
+}
+.connect h2 {
+  color: #fff;
+  font-family: "Cabin", "Open Sans", sans-serif;
+  font-weight: normal;
+  margin: 0 auto;
+  max-width: 33ex;
+  text-align: center;
+}
+.connect a {
+  color: #fff;
+}
+.connect a:hover {
+    color: #11a64a;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  max-width: 40%;
+}
+.social img {
+  padding: 1rem;
+  width: 6rem;
+}
+
+/***MEDIA QUERIES***/
+/***TABLET***/
+@media (min-width: 45rem) {
+  .navbar {
+    align-items: center;
+    background-color: #fff;
+    border-bottom: .1rem solid rgb(243, 204, 45, 0.5);
+    display: flex;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  .navbar a {
+    color: #056BBD;
+    font-family: "Cabin", "Open Sans", sans-serif;
+    font-size: 1.6rem;
+  }
+  .hamburger-nav {
+    display: none;
+  }
+  .links {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .links a {
+    padding: 5rem;
+  }
+  nav a {
+      text-decoration: none;
+    }
+  nav a img {
+      width: auto;
+    }
+  .links a:hover {
+    color: #11A64A;
+    text-decoration: underline;
+  }
+  a.contact {
+    color: #11A64A;
+    position: relative;
+  }
+  a.contact:hover {
+    text-decoration: none;
+  }
+  .green-line {
+    background-color: #11A64A;
+    height: 0.5rem;
+    position: absolute;
+    right: 4.85rem;
+    top: 5.25rem;
+    width: 5.5rem;
+    z-index: 500;
+  }
+  .connect h2 {
+    font-size: 2rem;
+  }
+  .social img:hover {
+    transition: .3s ease-in-out;
+    width: 7rem;
+  }
+}
+/***DESKTOP***/
+@media (min-width: 70rem) {
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-family: "Montserrat", "Open Sans",sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  .cta {
+    margin: 0 auto;
+  }
+}
